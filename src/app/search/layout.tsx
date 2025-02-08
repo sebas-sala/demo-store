@@ -1,5 +1,6 @@
 import { Filters } from './components/filters';
 import { Collections } from './components/collections';
+import { Suspense } from 'react';
 
 export default function Layout({
   children,
@@ -9,11 +10,15 @@ export default function Layout({
   return (
     <div className='grid grid-cols-12'>
       <section className='col-span-3'>
-        <Collections />
+        <Suspense>
+          <Collections />
+        </Suspense>
       </section>
       <section className='col-span-7'>{children}</section>
       <section className='col-span-2'>
-        <Filters />
+        <Suspense>
+          <Filters />
+        </Suspense>
       </section>
     </div>
   );
