@@ -23,7 +23,7 @@ export function CollectionItem({
       key={name}
       className={cn(
         'text-sm hover:underline underline-offset-4',
-        isActive && 'text-black underline'
+        isActive && 'underline'
       )}
     >
       <Link href={newHref}>{name}</Link>

@@ -25,12 +25,6 @@ export function HeaderNavigation() {
           <li>
             <Link href='/search'>All</Link>
           </li>
-          <li>
-            <Link href='/search/shirts'>Shirts</Link>
-          </li>
-          <li>
-            <Link href='/search/stickers'>Stickers</Link>
-          </li>
         </ul>
       </div>
     </nav>

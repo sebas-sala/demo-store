@@ -31,7 +31,7 @@ export function FilterItem({
       key={filter.name}
       className={cn(
         'text-sm hover:underline underline-offset-4',
-        isActive && 'text-black underline'
+        isActive && 'underline'
       )}
     >
       <Link href={href}>{filter.name}</Link>
